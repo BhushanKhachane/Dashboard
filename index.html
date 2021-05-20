@@ -7,14 +7,11 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
     <div>
-        <!-- header -->
-    <header class="w3-top">
-        <i class="bi bi-person-circle w3-right w3-text-white w3-large w3-button" style="margin-right:5%; margin-top:1.5%;"> User</i>
-    </header>
-    </div>
+      
     <!-- Sidebar-->
     <div class="w3-sidebar w3-bar-block w3-black" style="width:20%">
         <a href="#" class="w3-bar-item w3-button w3-hover-deep-orange" style="text-align: center;" ><i class="bi bi-house-door"> Home</i></a>
@@ -27,13 +24,19 @@
     </div>
       
       <div style="margin-left:20%">
-       <div class="w3-container w3-teal">
-           <h2 class="w3-animate-top">Hi, Champion!</h2>
+       <div class="w3-row">
+           <h1 class="w3-col s9 w3-green w3-center">Hi, Champion!</h1>
+        <h1 class="w3-col s3 w3-dark-grey w3-center"><i class="bi bi-person-circle"> User</i></h1>
+
        </div>
       </div>
 
-      <div class="w3-card" style="width: 40%;margin-top:30px;;margin-left:22%;">
-        <header class="w3-container w3-pale-blue">
+      <!-- Upcoming Videos -->
+<div class="container">
+    <div class="w3-row-padding">
+        <div class="w3-col s6">
+              <div class="w3-card" style="width: 75%;margin-top:30px;margin-left:30%;">
+             <header class="w3-container w3-pale-blue">
             <h3>Upcoming Lessons</h3>
           </header>
           <div class="w3-row w3-border-bottom w3-border-top w3-pale-white" >
@@ -68,6 +71,49 @@
             </div>
           </div>
       </div>
+    </div>
+    <!-- Leader Board -->
+        <div class="w3-col s6">
+            <table class="w3-table-all w3-card-4" style="width:100%;margin-top:15px;margin-left:15%;">
+                <tr><h2 style="margin-left: 15%;">Leader Board</h2></tr>
+                <tr class="w3-red">
+                    <th>Rank</th>
+                    <th style="text-align: center;">Name</th>
+                    <th style="text-align:left;">Best_Score</th>
+                    <th>Ponts</th>
+                </tr>
+                <tr>
+                    <td>1 <i class="bi bi-caret-up-fill" style="color: rgb(101, 187, 15);"></i></td>
+                    <td><img src="/RS.jpg" style="width: 15%;border-radius: 50%;"/> Rohit Sharma</td>
+                    <td>95</td>
+                    <td>2800</td>
+                </tr>
+                <tr>
+                    <td>2 <i class="bi bi-caret-down-fill" style="color: rgb(206, 15, 15);"></i></td>
+                    <td><img src="/VK2.jpg" alt="Virat Kohli" style="width: 15%;border-radius: 50%;"> Virat Kohli</td>
+                    <td>93</td>
+                    <td>2780</td>
+                </tr>
+                <tr>
+                    <td>3 <i class="bi bi-caret-up-fill" style="color: rgb(101, 187, 15);"></i></td>
+                    <td><img src="/SD.jpg" style="width: 15%;border-radius: 50%;"/> Shikhar Dhavan</td>
+                    <td>88</td>
+                    <td>2600</td>
+                </tr>
+                <tr>
+                    <td>4 <i class="bi bi-caret-down-fill" style="color: rgb(206, 15, 15);"></i></td>
+                    <td><img src="/JSB.jpg" style="width: 15%;border-radius: 50%;"/> Jasprit Bumrah</td>
+                    <td>80</td>
+                    <td>2500</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+  </div>
+
+      
+
+
 
 
 </body>
