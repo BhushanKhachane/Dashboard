@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 </head>
 <body>
     <div>
@@ -35,7 +39,7 @@
 <div class="container">
     <div class="w3-row-padding">
         <div class="w3-col s6">
-              <div class="w3-card" style="width: 75%;margin-top:30px;margin-left:30%;">
+              <div class="w3-card" style="width: 75%;margin-top: 50px;margin-left:30%;">
              <header class="w3-container w3-pale-blue">
             <h3>Upcoming Lessons</h3>
           </header>
@@ -45,9 +49,8 @@
                 <p style="color: #6c6f70; font-size: 14px;font-weight: 550;">4:00 PM</p>
             </div>
             <div class="w3-col s9 w3-pale-blue w3-center">
-                <p style="text-shadow:1px 1px 0 #444">Tutoring, Algebra</p>
-                <p style="color: #6c6f70; font-size: 14px;font-weight: 550;">Pierre Hackett</p>
-                
+                <p style="text-shadow:1px 1px 0 #444">Tutoring, Algebra <img class="w3-right" src="/Anime1.jpg" alt="" style="width: 15%;border-radius: 50%;"/></p>
+                <p style="color: #6c6f70; font-size: 14px;font-weight: 550;">Pierre Hackett</p>       
             </div>
           </div>
           <div class="w3-pale w3-row w3-border-bottom w3-pale-white">
@@ -56,7 +59,7 @@
                 <p style="color: #6c6f70; font-size: 14px;font-weight: 550;">4:00 PM</p>
             </div>
             <div class="w3-col s9 w3-pale-blue w3-center">
-                <p style="text-shadow:1px 1px 0 #444">  School Homework <i class="bi bi-person-circle"></i></p>
+                <p style="text-shadow:1px 1px 0 #444">School Homework <img class="w3-right" src="/LOGO.jpg" alt="" style="width: 15%;  border-radius: 50%;"/></p>
                 <p style="color: #6c6f70; font-size: 14px;font-weight: 550;">Global History / Analysis</p>
             </div>
           </div>
@@ -66,7 +69,7 @@
                 <p style="color: #6c6f70; font-size: 14px;font-weight: 550;">5:00 PM</p>
             </div>
             <div class="w3-col s9 w3-pale-blue w3-center">
-                <p style="text-shadow:1px 1px 0 #444">Tutoring French Language</p>
+                <p style="text-shadow:1px 1px 0 #444">Tutoring French Language  <img class="w3-right" src="/man.jpg" alt="" style="width: 15%;border-radius: 50%;"/></p>
                 <p style="color: #6c6f70; font-size: 14px;font-weight: 550;">Pierre Hackett</p>
             </div>
           </div>
@@ -109,6 +112,48 @@
             </table>
         </div>
     </div>
+  </div>
+
+  <!--Second Row -->
+  <div class="container">
+      <div class="w3-row-padding">
+          <div class="w3-col s6">
+              <!-- Skill Radar Chart -->
+              <div class="w3-card-4" style="width: 75%;margin-top: 50px;margin-left:30%;">
+                  <h2>Skills</h2>
+                <canvas id="marksChart" width="600" height="400"></canvas>
+                <script>
+                    var marksCanvas = document.getElementById("marksChart");
+
+var marksData = {
+  labels: ["English", "Maths", "Physics", "Chemistry", "Biology", "History"],
+  datasets: [{
+    label: "2018",
+    backgroundColor: "rgba(200,0,0,0.2)",
+    data: [65, 75, 70, 80, 60, 80]
+  }, {
+    label: "2019",
+    backgroundColor: "transparent",
+    borderColor: "rgba(0,0,200,0.6)",
+    fill: false,
+    radius: 6,
+    pointRadius: 6,
+    pointBorderWidth: 3,
+    pointBackgroundColor: "cornflowerblue",
+    pointBorderColor: "rgba(0,0,200,0.6)",
+    pointHoverRadius: 10,
+    data: [54, 65, 60, 70, 70, 75]
+  }]
+};
+
+var radarChart = new Chart(marksCanvas, {
+  type: 'radar',
+  data: marksData
+});
+                </script>
+              </div>
+          </div>
+      </div>
   </div>
 
       
