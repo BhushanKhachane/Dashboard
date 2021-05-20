@@ -18,13 +18,14 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
       
     <!-- Sidebar-->
     <div class="w3-sidebar w3-bar-block w3-black" style="width:20%">
-        <a href="#" class="w3-bar-item w3-button w3-hover-deep-orange" style="text-align: center;" ><i class="bi bi-house-door"> Home</i></a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-pink">Link 4</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-red">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-red">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-red">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-red">Link 3</a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-red">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-deep-orange" style="text-align: center;" ><i class="bi bi-display">  Dashboard</i></a>
+        <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-pink"><i class="bi bi-pencil-square"> Upcoming Lessons</i></a>
+        <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-red"><i class="bi bi-ui-checks"> Tasks</i></a>
+        <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-red"><i class="bi bi-trophy"> Leader Board</i></a>
+        <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-red"><i class="bi bi-book"> My Cources</i></a>
+        <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-red"><i class="bi bi-graph-up"> Some Analytic Graphs</i></a>
+        <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-red"><i class="bi bi-table"> Time Table</i></a>
+        <a href="#" class="w3-bar-item w3-button w3-xlarge w3-hover-red"><i class="bi bi-file-check"> Homework Progress</i></a>
     </div>
       
       <div style="margin-left:20%">
@@ -122,35 +123,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
               <div class="w3-card-4" style="width: 75%;margin-top: 50px;margin-left:30%;">
                   <h2>Skills</h2>
                 <canvas id="marksChart" width="600" height="400"></canvas>
-                <script>
-                    var marksCanvas = document.getElementById("marksChart");
-
-var marksData = {
-  labels: ["English", "Maths", "Physics", "Chemistry", "Biology", "History"],
-  datasets: [{
-    label: "2018",
-    backgroundColor: "rgba(200,0,0,0.2)",
-    data: [65, 75, 70, 80, 60, 80]
-  }, {
-    label: "2019",
-    backgroundColor: "transparent",
-    borderColor: "rgba(0,0,200,0.6)",
-    fill: false,
-    radius: 6,
-    pointRadius: 6,
-    pointBorderWidth: 3,
-    pointBackgroundColor: "cornflowerblue",
-    pointBorderColor: "rgba(0,0,200,0.6)",
-    pointHoverRadius: 10,
-    data: [54, 65, 60, 70, 70, 75]
-  }]
-};
-
-var radarChart = new Chart(marksCanvas, {
-  type: 'radar',
-  data: marksData
-});
-                </script>
+                <script src="chart.js"></script>
               </div>
           </div>
       </div>
